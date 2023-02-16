@@ -3,7 +3,8 @@ document.getElementById('movie-table').innerHTML = makeTable(myMovies);
 document.getElementById('movie-checkbox').innerHTML = makeCheckbox(myMovies);
 
 
-
+document.getElementById("submit").onclick = getCntChecked;
+document.getElementById("cancel").onclick = cancel;
 
 
 
@@ -64,4 +65,17 @@ function addMovieInCheckbox(idx, movie){
     return `
         <input type='checkbox' name='movies' value='movie${idx}'/> ${movie[0]}<br>
     `;
+}
+
+function getCntChecked(){
+    const query = 'input[name="movies"]:checked';
+    const selectedElements = document.querySelectorAll(query);
+
+    var name = document.getElementById('name').value;
+    var text = `${name}님, 저와 ${selectedElements.length}개의 취향이 같으시네요!`;
+    alert(text);
+}
+
+function cancel(){
+    
 }
