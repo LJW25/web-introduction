@@ -4,7 +4,6 @@ document.getElementById('movie-checkbox').innerHTML = makeCheckbox(myMovies);
 
 
 document.getElementById("submit").onclick = getCntChecked;
-document.getElementById("cancel").onclick = cancel;
 
 
 
@@ -74,8 +73,4 @@ function getCntChecked(){
     var name = document.getElementById('name').value;
     var text = `${name}님, 저와 ${selectedElements.length}개의 취향이 같으시네요!`;
     alert(text);
-}
-
-function cancel(){
-    
 }
