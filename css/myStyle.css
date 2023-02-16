@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@300&display=swap");
+
+:root {
+    --maincolor : #4457C0;
+    --subcolor : white;
+  }
+
+
+.title-font{
+    font-family: 'Do Hyeon', sans-serif;
+    color:var(--maincolor);
+}
+
+.content-font{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+}
+
+.line{
+    border-radius: 5px;
+    border: solid 3px lightgrey;
+    background-color: lightgrey;
+    margin-top:30px;
+    width:70%;
+}
+
+/*container*/
+.body-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    min-width: 600px;
+}
+
+.content-container{
+    width: 80%;
+}
+/*
+.introduction-container{
+}
+
+.table-container{
+}
+
+.comment-contanier{
+}
+*/
+
+.button-container{
+    
+    margin-top:20px;
+}
+
+/*-------table-----------*/
+table{
+    border-collapse: collapse;
+    border-top:1px solid var(--maincolor);
+    margin-left:18px;
+    margin-bottom:20px;
+    text-align: center;
+}
+th{
+    color:var(--maincolor);
+    font-weight: bold;
+    min-width: 70px;
+}
+td{
+    border-bottom: 1px solid var(--maincolor);
+    padding: 10px;
+    font-size:14px;
+    word-break: keep-all;
+}
+
+/*-------Btn-----------*/
+.button-basic{
+    background-color: var(--maincolor);
+    border: solid 2px var(--maincolor);
+    border-radius: 10px;
+    color:var(--subcolor);
+}
+
+.button-basic:hover{
+    background-color: var(--subcolor);
+    border: solid 2px var(--maincolor);
+    border-radius: 10px;
+    color:var(--maincolor);
+}
