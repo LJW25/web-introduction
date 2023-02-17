@@ -43,7 +43,7 @@ function addMovieInTable(idx, movie){
                         <tr>
                             <td>${idx}</td>
                             <td>${movie[0]}</td>
-                            <td><img src="../images/${movie[1]}" alt=""></td>
+                            <td><img src="./images/${movie[1]}" alt=""></td>
                             <td>${movie[2]}</td>
                             <td><a href="${movie[3]}">바로가기</a></td>
                         </tr>
